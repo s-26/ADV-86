@@ -1,0 +1,84 @@
+
+<!-- saved from url=(0048)https://thanishka778.github.io/super-hero-maker/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>your own hero</title>
+        <link rel="stylesheet" href="./your own hero_files/style.css">
+        <link rel="stylesheet" href="./your own hero_files/bootstrap.min.css">
+
+<script src="./your own hero_files/jquery.min.js.download"></script>
+
+<script src="./your own hero_files/bootstrap.min.js.download"></script>
+
+        <script src="./your own hero_files/fabric.js.download"></script>
+        </head><body data-new-gr-c-s-check-loaded="14.1012.0" data-gr-ext-installed="" class="" style="">
+            <h1 id="h1">Make your own hero</h1> <br><br><br>   
+            <section id="faces">
+                <h1>Select your face</h1><h2>(you can select only once)</h2>
+                <img id="spider_face" onclick="spiderface()" src="./your own hero_files/spiderman_face.png">
+                <img id="thor_face" onclick="thorface()" src="./your own hero_files/thor_face.png">
+                <img id="iron_face" onclick="ironface()" src="./your own hero_files/ironman_face.png">
+            </section>
+
+            <section id="bodies">
+                <h1>Select your body</h1><h2>(you can select only once)</h2>
+                <img id="hulk_body" onclick="hulkbody()" src="./your own hero_files/hulk_body.png">
+                <img id="iron_body" onclick="ironbody()" src="./your own hero_files/ironman_body.png">
+                <img id="spider_body" onclick="spiderbody()" src="./your own hero_files/spiderman_body.png">
+            </section>
+
+            <section id="legs">
+                <h1>Select your legs</h1><h2>(you can select only once)</h2>
+                <img id="spider_legs" onclick="spiderlegs()" src="./your own hero_files/spiderman_legs.png">
+                <img id="hulk_legs" onclick="hulklegs()" src="./your own hero_files/hulk_legs.png">
+                <img id="iron_legs" onclick="ironlegs()" src="./your own hero_files/ironman_legs.png">
+            </section>
+
+            <section id="right_hands">
+                <h1>Select your right hand</h1><h2>(you can select only once)</h2>
+                <img id="iron_right_hand" onclick="iron_rh()" src="./your own hero_files/ironman_right_hand.png">
+                <img id="thor_right_hand" onclick="thor_rh()" src="./your own hero_files/thor_right_hand.png">
+                <img id="spider_right_hand" onclick="spider_rh()" src="./your own hero_files/spiderman_right_hand.png">
+            </section>
+
+            <section id="left_hands">
+                <h1>Select your left hand</h1><h2>(you can select only once)</h2>
+                <img id="spider_left_hand" onclick="spider_lh()" src="./your own hero_files/spiderman_left_hand.png">
+                <img id="iron_left_hand" onclick="iron_lh()" src="./your own hero_files/ironman_left_hand.png">
+                <img id="thor_left_hand" onclick="thor_lh()" src="./your own hero_files/thor_left_hand.png">
+            </section>
+           
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Next</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog" style="display: none;">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4 class="modal-title">Rules</h4>
+        </div>
+        <div class="modal-body">
+          <p>Now you can finally create your superhero! click on- 'f' to get your face, 'b' to get your body, 'l' to get your legs, 'r' to get your right hand and 'h' to get your left hand. you can click on shift and p to make your block bigger and click on shift and m to make your block smaller</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+<br><br><br>
+<center>
+<div id="head_info" class="btn-danger">
+  <h3>Current Width  = <span id="current_width">30</span></h3>
+  <h3>Current Height  = <span id="current_height">30</span></h3>
+</div>
+            <div class="canvas-container" style="width: 800px; height: 500px; position: relative; user-select: none;"><canvas id="myCanvas" width="800" height="500" class="lower-canvas" style="position: absolute; width: 800px; height: 500px; left: 0px; top: 0px; touch-action: none; user-select: none;"></canvas><canvas class="upper-canvas " width="800" height="500" style="position: absolute; width: 800px; height: 500px; left: 0px; top: 0px; touch-action: none; user-select: none; cursor: default;"></canvas></div>
+          </center>
+        
+        <script src="./your own hero_files/main.js.download"></script>
+    
+</body></html>
